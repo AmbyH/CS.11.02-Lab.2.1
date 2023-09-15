@@ -3,14 +3,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(add(1,2));
-        System.out.println(add(1,2,3,4));
-        System.out.println(morningGreeting("Thomas"));
-        System.out.println(afternoonGreeting("Theodore Zhu"));
-        System.out.println(triple("oohbabyyy"));
-        System.out.println(half(5));
-        System.out.println(roundPositiveValueToNearestInteger(6.9));
-        System.out.println(roundNegativeValueToNearestInteger(-6.9));
+        int sumOfTwoNumbers = add(1,2);
+        System.out.println(sumOfTwoNumbers);
+        int sumOfFourNumbers = add(1,2,3,4);
+        System.out.println(sumOfFourNumbers);
+        String morning = morningGreeting("Thomas");
+        System.out.println(morning);
+        String afternoon = afternoonGreeting("Theodore Zhu");
+        System.out.println(afternoon);
+        String three = triple("oohbabbbbyyyy");
+        System.out.println(three);
+        double overTwo = half(5);
+        System.out.println(overTwo);
+        int roundPositive = roundPositiveValueToNearestInteger(6.9);
+        System.out.println(roundPositive);
+        int roundNegative = roundNegativeValueToNearestInteger(-6.9);
+        System.out.println(roundNegative);
 
     }
 
@@ -49,7 +57,7 @@ public class Main {
     }
 
     // 7. roundPositiveValueToNearestInteger
-    public static double roundPositiveValueToNearestInteger(double a) {
+    public static int roundPositiveValueToNearestInteger(double a) {
         return (int) (a+0.5);
     }
 
