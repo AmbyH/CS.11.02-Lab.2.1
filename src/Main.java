@@ -1,6 +1,16 @@
 public class Main {
 
+
     public static void main(String[] args) {
+
+        System.out.println(add(1,2));
+        System.out.println(add(1,2,3,4));
+        System.out.println(morningGreeting("Thomas"));
+        System.out.println(afternoonGreeting("Theodore Zhu"));
+        System.out.println(triple("oohbabyyy"));
+        System.out.println(half(5));
+        System.out.println(roundPositiveValueToNearestInteger(6.9));
+        System.out.println(roundNegativeValueToNearestInteger(-6.9));
 
     }
 
@@ -11,7 +21,7 @@ public class Main {
     
     // 2. add
     public static int add(int a, int b, int c, int d) {
-        return a+b+c+d;
+        return add(add(add(a,b),c),d);
     }
 
     // 3. morningGreeting
